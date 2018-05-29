@@ -9,7 +9,6 @@ function towerBuilder(nFloors) {
     resultAry.push(result)
   }
     console.log(resultAry)
-  
 }
 
 towerBuilder(3)
