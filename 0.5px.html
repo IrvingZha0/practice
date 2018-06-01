@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	<style>
+		.hr {
+			width: 300px;
+			background-color: #000;
+		}
+
+		.hr.scale-half {
+			height: 1px;
+			transform: scaleY( 0.5);
+			transform-origin: 50% 100%;
+		}
+		.hr.half-px {
+			height: 0.5px;
+		}
+		.hr.one-px {
+			height: 1px;
+		}
+	</style>
+</head>
+
+<body>
+	<p>1px + scaleY(0.5)</p>
+	<div class="hr scale-half"></div>
+	<p>0.5px</p>
+	<div class="hr half-px"></div>
+	<p>1px</p>
+	<div class="hr one-px"></div>
+
+	<p>Chrome 把 0.5px 四舍五入变成了 1px，而 firefox/safari 能够画出半个像素的边，并且 Chrome 会把小于 0.5px 的当成 0，而 Firefox 会把不小于 0.55px 当成 1px，Safari 是把不小于 0.75px 当成 1px</p>
+</body>
+
+</html>
