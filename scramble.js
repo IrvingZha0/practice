@@ -8,7 +8,6 @@ function scramble(str1, str2) {
             i++;
         }
     }
-    console.log(x)
     return (x <= s1.length);
 }
 console.log(scramble('rkqodlw', 'world'))
