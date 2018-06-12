@@ -14,6 +14,8 @@
 //     }
 // }
 
+// for number less than 141 use above code is fine
+
 function factorial(n) {
     // Add some code
     if (n < 0) { return null; }
